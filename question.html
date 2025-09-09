@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<table>
+		<tr>
+		<header>
+			<td>
+			<a href="index.html">
+    			<img src="img/logo.png" alt="Не удаётся загрузить лого" width="100">
+    		</a>
+    		</td>
+    		<td>
+    			<h1>Отзыв по моим трудам</h1>
+    		</td>
+		</header>
+		</tr>
+	</table>
+
+<hr color="black" noshade="120">
+
+
+	    <h1>Опросная форма</h1>
+    
+    <form action="#" method="post">
+        <!-- Поля ввода -->
+        <div>
+            <label>ФИО:</label>
+            <input type="text" name="fio" required>
+        </div>
+        
+        <div>
+            <label>Возраст:</label>
+            <input type="number" name="age" min="1" max="120">
+        </div>
+        
+        <div>
+            <label>Адрес:</label>
+            <input type="text" name="address">
+        </div>
+        
+        <div>
+            <label>Телефон:</label>
+            <input type="tel" name="phone">
+        </div>
+        
+        <div>
+            <label>Адрес электронной почты:</label>
+            <input type="email" name="email">
+        </div>
+        
+        <!-- Флажки - области интересов -->
+        <div>
+            <label>Области интересов:</label><br>
+            <input type="checkbox" name="interests" value="sport"> Спорт<br>
+            <input type="checkbox" name="interests" value="science"> Наука<br>
+            <input type="checkbox" name="interests" value="art"> Искусство<br>
+            <input type="checkbox" name="interests" value="technology"> Технологии<br>
+            <input type="checkbox" name="interests" value="travel"> Путешествия
+        </div>
+        
+        <!-- Селекторные переключатели - сфера деятельности -->
+        <div>
+            <label>Основная сфера деятельности:</label><br>
+            <input type="radio" name="activity" value="it"> IT<br>
+            <input type="radio" name="activity" value="education"> Образование<br>
+            <input type="radio" name="activity" value="medicine"> Медицина<br>
+            <input type="radio" name="activity" value="business"> Бизнес<br>
+            <input type="radio" name="activity" value="other"> Другое
+        </div>
+        
+        <!-- Выпадающий список - оценка сайта -->
+        <div>
+            <label>Оценка сайта:</label>
+            <select name="rating">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="unknown">Затрудняюсь ответить</option>
+            </select>
+        </div>
+        
+        <!-- Многострочное поле ввода -->
+        <div>
+            <label>Комментарий:</label><br>
+            <textarea name="comment" rows="4" cols="50"></textarea>
+        </div>
+        
+        <!-- Кнопки -->
+        <div>
+            <button type="submit">ОК</button>
+            <button type="reset">Сброс</button>
+        </div>
+    </form>
+</body>
+</html>
